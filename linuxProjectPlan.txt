@@ -1,0 +1,14 @@
+mpu6050(input) + 진동모터(output)
+
+web
+-node.js
+
+client
+-
+
+android + ios
+-flutter
+
+
+node.js로 백앤드 프론트 하고, 부트스트랩 써서 만들자. 그리고 git을 사용하고. 
+

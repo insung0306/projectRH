@@ -10,7 +10,7 @@ var server = net_server.createServer(function(client){
     client.setEncoding('utf8');
 
     client.on('data', function(data){
-        console.log('Received data from client on port %d: %s'.client.remotePort, data.toString());
+        console.log('Received data from client on port %d: %s',client.remotePort, data.toString());
         
         writeData(client, 'Sending: ' + data.toString());
         console.log('    Byte sent: ' + client.byteWritten);
@@ -18,7 +18,7 @@ var server = net_server.createServer(function(client){
     
     client.on('end',function() {
         console.log('Client disconnected');
-    })
+    });
     
     client.on('error', function(err){
         console.log('Socket Error: ', JSON.stringify(err));
@@ -29,7 +29,7 @@ var server = net_server.createServer(function(client){
     });
 });
 
-sever.listen(9090, function(){
+server.listen(9090, function(){
     console.log('Sever listenig: ' + JSON.stringify(server.address()));
     server.on('close',function(){
         console.log('Server Terminated');
@@ -39,7 +39,7 @@ sever.listen(9090, function(){
     });
 });
 
-function writeData(socker, data){
+function writeData(socket, data){
     var success = socket.write(data);
     if(!success){
         console.log("Client Send Fail");

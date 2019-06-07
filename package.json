@@ -1,0 +1,19 @@
+{
+  "name": "projectrh",
+  "version": "1.0.0",
+  "description": "this project is shows the health status of users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insung0306/projectRH.git"
+  },
+  "author": "insung-jeon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insung0306/projectRH/issues"
+  },
+  "homepage": "https://github.com/insung0306/projectRH#readme"
+}

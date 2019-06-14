@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/insung0306/projectRH/issues"
   },
-  "homepage": "https://github.com/insung0306/projectRH#readme"
+  "homepage": "https://github.com/insung0306/projectRH#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

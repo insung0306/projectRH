@@ -3,6 +3,7 @@ var rh_fs = require('fs');
 var rh_url = require('url');
 var express = require('express');
 var app = express();
+var router = express.Router();
 
 app.get('/',function(req, res){
     res.send('Hello World');
@@ -14,14 +15,17 @@ app.get('/',function(req, res){
 
 app.get('/random.text', function (req, res) {
     res.send('random.text');
+    console.log('/random.text');
 });
 
 app.get('/ab?cd', function(req, res) {
     res.send('ab?cd');
+    console.log('abcd');
 });
 
-app.post('/user', function(req, res){
+router.post('/user', function(req, res){
     res.send('Got a PUT request at /user');
+    console.log('/user');
 });
 
 //app.delete('/user', function (req, res) {
